@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  go-rest-mongo:
+    image: mongo:7.0.2-jammy
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: mongopass
